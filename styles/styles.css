@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Oswald', 'Ramillas-Regular';
+    src: url(fonts/TT\ Ramillas\ Trial\ Regular.ttf) format(truetype);
+}
+
+:root {
+    --azul-primary: #36869d;
+    --amarelo-primary: #ffde59;
+    --black-primary: #000100;
+    --font-primary: 'Oswald', 'Ramillas-Regular','sans-serif';
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--azul-primary);
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h2{
+    color: var(--black-primary);
+}
+
+.card {
+    max-width: 300px;
+    box-shadow: var(--azul-primary) 0px 5px 9px -20px, rgba(0, 0, 0, 0.3) 0px 30px 20px -30px
+}
+
+.card i {
+    font-size: 80px;
+    padding: 1rem;
+    color: var(--black-primary);
+}
+
+.card-text {
+    color: var(--black-primary);
+    font-weight: 700;
+}
+
+.btn-primary, .btn-light {
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--azul-primary);
+    border-color: var(--azul-primary);
+    color: #fff;
+    font-weight: 700;
+}
+
+.modal-body {
+    justify-content: center !important;
+}
+
+.muted { 
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    h1,
+    h2 {
+        font-size: 1rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
